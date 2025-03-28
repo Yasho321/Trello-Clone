@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="board">
+        <div class="coloumn" id="todo">
+            <h2>To do(<span id="todo-count">0</span>)</h2>
+            <div class="tasks" id="todo-tasks"></div>
+            <input type="text" value="" id="todo-input" class="text">
+            <button class="add-task" id="todo-add-task" onclick="addTask('todo')">Add Task</button>
+        </div>
+        <div class="coloumn" id="doing">
+            <h2>Doing(<span id="doing-count">0</span>)</h2>
+            <div class="tasks" id="doing-tasks"></div>
+            <input type="text" value="" id="doing-input" class="text">
+            <button class="add-task" id="doing-add-task" onclick="addTask('doing')">Add Task</button>
+        </div>
+        <div class="coloumn" id="done">
+            <h2>Done(<span id="done-count">0</span>)</h2>
+            <div class="tasks" id="done-tasks"></div>
+            <input type="text" value="" id="done-input" class="text">
+            <button class="add-task" id="done-add-task" onclick="addTask('done')">Add Task</button>
+        </div>
+
+    </div>
+    <div class="context-menu">
+        <ul>
+            <li onclick="editTask()">Edit</li>
+            <li onclick="deleteTask()">Delete</li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

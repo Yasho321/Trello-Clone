@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #034C53;
+
+}
+.board{
+    display: flex;
+    gap: 30px;
+
+    
+   
+}
+.coloumn{
+    min-height: 400px;
+    background-color: #007074;
+    min-width: 300px;
+    padding: 20px ;
+    border-radius: 20px;
+    color: #FFC1B4;
+
+
+}
+h2{
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+.tasks{
+    min-height: 400px;
+
+
+}
+.text{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: #007074 1px solid;
+
+
+}
+.add-task{
+    width: 100%;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #F38C79;
+    border-radius: 5px;
+    border: none ;
+    color:#034C53;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+
+}
+.add-task:hover{
+    background-color: #dd7562;
+    color: #02353a;
+}
+.card{
+    background-color:#dd7562;
+    padding: 10px 20px;
+    color :#02353a;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 550;
+    transition: all 0.3s ease;
+    cursor: grab;
+}
+.card:hover{
+    background-color: #cb6452;
+}
+.context-menu{
+    display: none;
+    position: absolute;
+    background-color: #F38C79;
+    padding: 10px 0;
+    color: #02353a;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+ul li{
+    list-style: none;
+    padding: 8px 16px;
+    border: #02353a;
+}
+.time{
+    font-size: 15px;
+    text-align: right;
+    font-style: italic;
+    display: block;
+    color: #02353a;
+}
